@@ -1,0 +1,190 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+  <title>student.registration.form</title>  
+  <style>
+    
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f6ff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #1d4ed8;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+marquee {
+  background: white;
+  color: #1d4ed8;
+  padding: 12px;
+  font-weight: bold;
+}
+
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 11px;
+  margin-top: 7px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #1d4ed8;
+  box-shadow: 0 0 5px rgba(29, 78, 216, 0.3);
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+
+.register {
+  width: 100%;
+  padding: 12px;
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+.register:hover {
+  background: #153ea8;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1d4ed8;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+  </style>
+</head>  
+<body>  
+  <header>  
+    <h1 id="home">📋 STUDENT REGISTRATION FORM</h1>  
+  </header>  
+  <hr>  
+  <marquee>🚀 Welcome to Student Registration Form 🚀</marquee>  
+  <hr>  
+  <br>  
+  <form>  
+    <label class="name">Full Name:</label>  
+    <br>  
+    <input type="text" id="name" placeholder="Enter your name">  
+    <br>  
+    <br>  
+    <label class="email">Email:</label>  
+    <br>  
+    <input type="email" id="email" placeholder="Enter your email">  
+    <br>  
+    <br>  
+     <label class="password">Password:</label>  
+    <br>  
+    <input type="password" id="password" placeholder="Enter your password">  
+    <br>  
+    <br>  
+    <label class="gender">Gender</label> <br>  
+    <input type="radio" id="gender">Male   
+    <input type="radio" id="gender">Female   
+    <input type="radio" id="gender">Other  
+    <br>  
+    <br>  
+    <label class="date">Date of Birth</label><br>  
+    <input type="date">   
+    <br>  
+    <br>  
+    <label>Course</label> <br>  
+<select>  
+      <option selected disabled>Select Course</option>  
+      <option>BCA</option>  
+      <option>B.Sc(PCM)</option>  
+      <option>B.Sc(CBZ)</option>  
+      <option>BBA</option>  
+      <option>BA</option>  
+      <option>B.Com</option>  
+      <option>BFSI</option>  
+</select>  
+ <br>  
+ <br>  
+ <label class="number">Phone Number</label><br>  
+ <input type="tel" id="number" placeholder="Enter your Phone number">  
+ <br>  
+ <br>  
+ <label>Address:</label>  
+ <br>  
+ <textarea rows="7" cols="30"></textarea>  
+ <br>  
+ <br>  
+ <label class="hobbies">Hobbies</label><br>  
+ <input type="checkbox" id="hobbies">Coding  
+ <input type="checkbox" id="hobbies">Dancing  
+ <input type="checkbox" id="hobbies">Drawing  
+ <input type="checkbox" id="hobbies">Reading  
+<br>   
+ <br>  
+ <button class="register">Register</button>  
+</form>  
+<hr>  
+<footer>  
+  <p>♥ © 2026 K Yashavanth ♥</p>   
+  <a href="#home">⬆ Back to Top</a>  
+</footer>  
+</body>  
+</html>  
