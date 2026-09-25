@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>.counter.app</title>
+  <style> body{
+  background: linear-gradient(to right, #36d1dc, #5b86e5);
+}
+
+
+.card{
+  border: 1px solid ;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 5px;
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+min-height: 200px;
+height: 500px;
+}
+
+header{
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color:yellow ;
+  text-align: center;
+  border: 1px solid ;
+  -webkit-text-stroke: 1px red;
+  font-size: 20px;
+}
+
+
+p{
+  color:white ;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: Times New Roman;
+  text-align: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button{
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  border: 1px solid;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  -webkit-text-stroke: 1px red;
+  cursor: pointer;
+  width: 200px;
+  text-align: center;
+}
+
+button:hover{
+  background: linear-gradient(to right, #f7971e, #ffd200);
+}
+
+
+footer{
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+ <div class="card"> 
+ <header>
+    <h1>My Counter App</h1>
+  </header>
+  <hr color="aqua" >
+<p id="count">0</p>
+
+<div class="buttons">
+  <button id="decrease">➖ Decrease </button>
+<button id="reset">🔄 Reset</button>
+<button id="increase">➕ Increase</button>
+</div>
+
+</div>
+<script>let Number=0;
+
+let count = document.getElementById("count");
+
+count.textContent=Number;
+
+let increase = document.getElementById("increase");
+increase.addEventListener("click", function() {
+Number=Number+1;
+count.textContent = Number;
+});
+
+let decrease = document.getElementById("decrease");
+decrease.addEventListener("click", function() {
+Number=Number-1;
+count.textContent = Number;
+});
+
+
+let reset = document.getElementById("reset");
+reset.addEventListener("click", function() {
+  Number=0;
+count.textContent = Number;
+});
+</script>
+
+<footer>© 2026 K Yashavanth | Day 41 | • 90 Days Full Stack Journey</footer>
+ </body> 
+</html>
