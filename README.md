@@ -39,6 +39,16 @@ It contains:
 🔗 **Live Page:**  
 https://yashavanth-k.github.io/Yashavanth-portfolio-/login.html
 
+
+
+## 🔢 Day 41 — Counter App
+
+A simple Counter web page created using HTML and internal CSS and JavaScript.
+
+
+🔗 **Live Page:**
+https://yashavanth-k.github.io/Yashavanth-portfolio-/DAY%2041/
+
 ## 🛠️ Technologies Used
 
 - HTML
