@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>.mini.Calculator.</title>
+  <style>
+    body{
+  background: linear-gradient(to right , #55c6f8 , #59f5b5);
+}
+
+header{
+  background-color: blue;
+  color: white;
+  border: 1px solid ;
+  font-family: Georgia;
+  text-align: center;
+  -webkit-text-stroke:1px #10e7fd
+}
+
+.Numbers{
+  display: flex;
+  gap: 100px;
+flex-wrap: wrap;
+}
+
+
+input{
+  position: relative;
+  background-color: #fffcf4;
+  color:#fa0fb5 ;
+  border: 1px solid  #b9d1fbee;
+  border-radius: 4px;
+  font-family: Times New Roman;
+  font-size: 25px;
+  width: 80px;
+}
+
+b{
+  color: black;
+  font-family: Trebuchet MS;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+p{
+  font-family: Times New Roman;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke:1px #fffb04;
+}
+
+.Opertaors{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+flex-wrap: wrap;
+}
+
+
+button{
+  background: linear-gradient(to right,#f22df7,#ffffff );
+  border: 1px solid ;
+  border-radius: 4px;
+  text-align: center;
+  color: blue;
+  font-size: 20px;
+  font-family: Verdana;
+}
+
+input::placeholder {
+  font-size: 10px;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🧮 Mini Calculator</h1>
+  </header> 
+  <hr color="red">
+  <br>
+  
+<div class="Numbers">
+   
+  <input type="tel" placeholder="Enter Number" id="num1"></input>
+  
+ <input type="tel" placeholder="Enter Number" id="num2"></input>
+
+</div>
+
+<br>     
+
+  <p id="result"></p>
+  
+<br>
+
+<div class="Opertaors">
+  
+   <button id="Addition"><b>+</b> Addition</button>
+
+<button id="Substraction"><b>–</b> Substraction</button>
+
+<button id="Multiplication"><b>×</b> Multiplication</button>
+
+<button id="Division"><b>÷</b> Division</button>
+
+<button id="Modulus"><b>%</b> Modulus</button>
+
+</div>
+
+  <script>
+    let additionButton = document.getElementById("Addition");
+let subtractionButton = document.getElementById("Substraction");
+let multiplicationButton = document.getElementById("Multiplication");
+let divisionButton = document.getElementById("Division");
+let modulusButton = document.getElementById("Modulus");
+
+additionButton.addEventListener("click", function() {
+    add();
+});
+
+subtractionButton.addEventListener("click", function() {
+    sub();
+});
+
+multiplicationButton.addEventListener("click", function() {
+    Mul();
+});
+
+divisionButton.addEventListener("click", function() {
+    div();
+});
+
+modulusButton.addEventListener("click", function() {
+    mod();
+});
+
+
+
+function add() {
+    let num1 = Number(document.getElementById("num1").value
+    );
+    let num2 = Number(document.getElementById("num2").value);
+       
+      let result = num1 + num2;
+    document.getElementById("result").textContent = result;
+}
+
+ 
+
+function sub() {
+    let num1 = Number(document.getElementById("num1").value);
+    let num2 = Number(document.getElementById("num2").value);
+       
+      let result = num1 - num2;
+    document.getElementById("result").textContent = result;
+}
+
+
+
+function Mul() {
+    let num1 = Number(document.getElementById("num1").value);
+    let num2 = Number(document.getElementById("num2").value);
+       
+      let result = num1 * num2;
+    document.getElementById("result").textContent = result;
+}
+
+
+function div() {
+    let num1 = Number(document.getElementById("num1").value);
+    let num2 = Number(document.getElementById("num2").value);
+       
+      let result = num1 / num2;
+    document.getElementById("result").textContent = result;
+}
+
+
+function mod() {
+    let num1 = Number(document.getElementById("num1").value);
+    let num2 = Number(document.getElementById("num2").value);
+       
+      let result = num1 % num2;
+    document.getElementById("result").textContent = result;
+}
+  </script>
+  
+</body>
+  </html>
